@@ -5,7 +5,7 @@ function WordList() {
   const [loading, setLoading] = useState(false);
   useEffect(() => {
     setLoading(true);
-    fetch("http://localhost:8080/flashcards")
+    fetch("http://localhost:8032/flashcards")
       .then((response) => response.json())
       .then((json) => setWords(json))
       .finally(() => {
